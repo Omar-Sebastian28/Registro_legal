@@ -1,0 +1,79 @@
+﻿@if (User.IsInRole(Roles.Usuario.ToString()))
+{
+    Layout = "_LayoutUsuario";
+}
+@model List<BasicCarpetaViewModel>
+
+@{
+    ViewData["Title"] = "Listado de Carpetas";
+}
+
+<div class="container py-5">
+
+    <div class="d-flex justify-content-between align-items-center mb-5">
+        <h1 class="display-6 fw-bold text-primary mb-0">
+            <i class="bi bi-folder-fill me-2 text-warning"></i> Registro de Carpetas
+        </h1>
+        <a class="btn btn-success btn-lg shadow-sm d-flex align-items-center gap-2"
+           asp-controller="Carpeta" asp-action="Create">
+            <i class="bi bi-folder-plus"></i> Nueva Carpeta
+        </a>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info text-center py-4 rounded-3 shadow-sm">
+            <i class="bi bi-info-circle me-2"></i>
+            <span class="fw-semibold">No hay carpetas registradas aún.</span>
+        </div>
+    }
+    else
+    {
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var item in Model)
+            {
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+
+                        <div class="card-header bg-light d-flex align-items-center justify-content-between">
+                            <h5 class="mb-0 fw-semibold text-dark">
+                                <i class="bi bi-folder text-warning me-2"></i> @item.Nombre
+                            </h5>
+                            <span class="badge bg-primary rounded-pill">
+                                @item.Elementos @((item.Elementos == 1) ? "Ilícito" : "Ilícitos")
+                            </span>
+                        </div>
+
+                        <div class="card-body">
+                            <p class="text-muted small mb-0">
+                                Carpeta con registro de ilícitos vinculados.
+                                Gestiona, edita o elimina según corresponda.
+                            </p>
+                        </div>
+
+                        <div class="card-footer bg-white border-0">
+                            <div class="d-flex flex-wrap gap-2">
+                                <a asp-controller="InfraccionCarpeta" asp-action="Index" asp-route-carpetaId="@item.Id"
+                                   class="btn btn-sm btn-primary flex-fill">
+                                    <i class="bi bi-folder2-open me-1"></i> Ver
+                                </a>
+                                <a asp-controller="InfraccionCarpeta" asp-action="AddIlicito" asp-route-carpetaId="@item.Id"
+                                   class="btn btn-sm btn-outline-primary flex-fill">
+                                    <i class="bi bi-plus-circle me-1"></i> Agregar
+                                </a>
+                                <a asp-controller="Carpeta" asp-action="Edit" asp-route-id="@item.Id"
+                                   class="btn btn-sm btn-outline-secondary flex-fill">
+                                    <i class="bi bi-pencil me-1"></i> Editar
+                                </a>
+                                <a asp-controller="Carpeta" asp-action="Delete" asp-route-id="@item.Id"
+                                   class="btn btn-sm btn-outline-danger flex-fill">
+                                    <i class="bi bi-trash me-1"></i> Eliminar
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

@@ -1,0 +1,17 @@
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\bin\Debug\net9.0\RegistroLegal.Infraestructura.Share.deps.json
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\bin\Debug\net9.0\RegistroLegal.Infraestructura.Share.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\bin\Debug\net9.0\RegistroLegal.Infraestructura.Share.pdb
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\bin\Debug\net9.0\RegistroLegal.Core.Aplications.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\bin\Debug\net9.0\RegistroLegal.Core.Domain.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\bin\Debug\net9.0\RegistroLegal.Core.Aplications.pdb
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\bin\Debug\net9.0\RegistroLegal.Core.Domain.pdb
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\obj\Debug\net9.0\RegistroLegal.Infraestructura.Share.csproj.AssemblyReference.cache
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\obj\Debug\net9.0\RegistroLegal.Infraestructura.Share.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\obj\Debug\net9.0\RegistroLegal.Infraestructura.Share.AssemblyInfoInputs.cache
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\obj\Debug\net9.0\RegistroLegal.Infraestructura.Share.AssemblyInfo.cs
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\obj\Debug\net9.0\RegistroLegal.Infraestructura.Share.csproj.CoreCompileInputs.cache
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\obj\Debug\net9.0\Registro.811140CF.Up2Date
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\obj\Debug\net9.0\RegistroLegal.Infraestructura.Share.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\obj\Debug\net9.0\refint\RegistroLegal.Infraestructura.Share.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\obj\Debug\net9.0\RegistroLegal.Infraestructura.Share.pdb
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\obj\Debug\net9.0\ref\RegistroLegal.Infraestructura.Share.dll

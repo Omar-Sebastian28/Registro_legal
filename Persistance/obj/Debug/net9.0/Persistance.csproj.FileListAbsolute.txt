@@ -1,0 +1,14 @@
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\bin\Debug\net9.0\Persistance.deps.json
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\bin\Debug\net9.0\Persistance.runtimeconfig.json
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\bin\Debug\net9.0\Persistance.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\bin\Debug\net9.0\Persistance.pdb
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\obj\Debug\net9.0\Persistance.csproj.AssemblyReference.cache
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\obj\Debug\net9.0\Persistance.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\obj\Debug\net9.0\Persistance.AssemblyInfoInputs.cache
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\obj\Debug\net9.0\Persistance.AssemblyInfo.cs
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\obj\Debug\net9.0\Persistance.csproj.CoreCompileInputs.cache
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\obj\Debug\net9.0\Persistance.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\obj\Debug\net9.0\refint\Persistance.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\obj\Debug\net9.0\Persistance.pdb
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\obj\Debug\net9.0\Persistance.genruntimeconfig.cache
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\obj\Debug\net9.0\ref\Persistance.dll

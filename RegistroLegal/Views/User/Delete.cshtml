@@ -1,0 +1,51 @@
+﻿@model DeleteUserViewModel
+@{
+    bool isAdmin = true;
+    if (User.IsInRole(Roles.Usuario.ToString()))
+    {
+        Layout = "_LayoutUsuario";
+        isAdmin = false;
+    }
+}
+
+@{
+    ViewData["Title"] = "Eliminacion de usuarios.";
+}
+<div class="container mt-5">
+    <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+        <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+            <!-- Header -->
+            <div class="card-header bg-danger text-white text-center py-3">
+                <h4 class="mb-0 fw-semibold"><i class="bi bi-exclamation-triangle-fill me-2"></i>Eliminar Usuario</h4>
+            </div>
+
+            <!-- Body -->
+            <div class="card-body text-center p-4">
+                <form asp-controller="User" asp-action="Delete" method="post">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" asp-for="Id" />
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <p class="lead text-dark mb-4">
+                        <strong>@Model.UserName @Model.LastName</strong>, ¿estás seguro que deseas eliminar tu cuenta?
+                    </p>
+
+                    <p class="text-muted small mb-4">
+                        Esta acción es <strong>irreversible</strong> y se eliminarán todos tus datos asociados.
+                    </p>
+
+                    <!-- Botones -->
+                    <div class="d-flex justify-content-center gap-3">
+                        <a asp-controller=@(isAdmin ? "User" : "Home") asp-action="Index" class="btn btn-outline-secondary px-4 py-2 rounded-pill">
+                            <i class="bi bi-x-lg me-1"></i> Cancelar
+                        </a>
+                        <button type="submit" class="btn btn-danger px-4 py-2 rounded-pill">
+                            <i class="bi bi-trash3-fill me-1"></i> Eliminar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

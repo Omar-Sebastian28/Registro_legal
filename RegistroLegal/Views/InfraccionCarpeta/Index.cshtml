@@ -1,0 +1,110 @@
+﻿@if (User.IsInRole(Roles.Usuario.ToString()))
+{
+    Layout = "_LayoutUsuario";
+}
+@model List<BasicInfraccionCarpetaViewModel>
+@{
+    ViewData["Title"] = "Infracciones archivadas";
+}
+
+<div class="container py-5">
+
+    <!-- Encabezado principal -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-4">
+        <h1 class="h3 fw-bold text-primary mb-2 mb-md-0">
+            <i class="bi bi-folder2-open me-2"></i> Elementos de la carpeta
+        </h1>
+        <a asp-controller="Carpeta" asp-action="Index"
+           class="btn btn-outline-secondary btn-sm rounded-pill shadow-sm">
+            <i class="bi bi-arrow-left me-1"></i> Regresar
+        </a>
+         <input type="hidden" />
+    </div>
+
+    <!-- Filtros -->
+    <div class="card border-0 shadow-sm rounded-4 mb-4">
+        <div class="card-body">
+            <form asp-action="Index" asp-controller="InfraccionCarpeta" method="GET" class="row g-3">
+                <input type="hidden" name="carpetaId" value="@ViewBag.CarpetaId" />
+                <div class="col-md-4">
+                    <label for="nombrePersona" class="form-label fw-semibold">Nombre</label>
+                    <input type="text" name="nombrePersona" class="form-control rounded-pill" placeholder="Buscar por nombre" />
+                </div>
+
+                <div class="col-md-4">
+                    <label for="cedula" class="form-label fw-semibold">Cédula</label>
+                    <input type="text" name="cedula" class="form-control rounded-pill" placeholder="Buscar por cédula de la persona" />
+                </div>
+
+                <div class="col-12 col-md-4 d-flex align-items-end justify-content-end">
+                    <button type="submit" class="btn btn-success rounded-pill px-4 shadow-sm">
+                        <i class="bi bi-funnel-fill me-1"></i> Filtrar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sin resultados -->
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info text-center py-5 rounded-4 shadow-sm">
+            <i class="bi bi-info-circle me-2 fs-3"></i>
+            <span class="fs-5">No hay elementos registrados aún.</span>
+        </div>
+    }
+    else
+    {
+        <!-- Cards -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var item in Model)
+            {
+                var persona = item.Infraccion?.Persona;
+
+                <div class="col">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden">
+
+                        <!-- Información -->
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold text-dark">@item.Infraccion?.Tipo</h5>
+                            <p class="card-text text-muted mb-1">
+                                <i class="bi bi-person me-2 text-primary"></i>
+                                @persona?.NombrePersona @persona?.Apellido
+                            </p>
+                            <p class="card-text text-muted mb-0">
+                                <i class="bi bi-credit-card me-2 text-primary"></i>
+                                @persona?.Cedula
+                            </p>
+                        </div>
+
+                        <!-- Acciones -->
+                        <div class="card-footer bg-white border-top d-flex justify-content-end">
+                            <a asp-controller="InfraccionCarpeta" asp-action="Delete" asp-route-id="@item.Id"
+                               class="btn btn-outline-danger btn-sm rounded-pill px-3 shadow-sm">
+                                <i class="bi bi-trash me-1"></i> Eliminar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+<style>
+    /* Card hover con elevación profesional */
+    .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .card-footer .btn {
+        transition: all 0.2s ease;
+    }
+
+        .card-footer .btn:hover {
+            transform: translateY(-2px);
+        }
+</style>
+

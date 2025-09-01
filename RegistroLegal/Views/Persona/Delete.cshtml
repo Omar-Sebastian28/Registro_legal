@@ -1,0 +1,43 @@
+﻿@if (User.IsInRole(Roles.Usuario.ToString()))
+{
+    Layout = "_LayoutUsuario";
+}
+@model DeletePersonaViewModel
+
+@{
+    ViewData["Title"] = "Confirmar Eliminación";
+}
+
+<div class="container mt-5">
+    <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+        <div class="card shadow-lg border-0 rounded-4">
+            <div class="card-header bg-danger text-white text-center rounded-top-4">
+                <h4 class="mb-0">Eliminar Persona</h4>
+            </div>
+
+            <div class="card-body text-center p-4">
+                <form asp-controller="Persona" asp-action="Delete" method="post">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" asp-for="Id" />
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <p class="lead mb-4">
+                        ¿Estás seguro que deseas eliminar a<br>
+                        <strong class="text-dark">@Model.NombrePersona</strong>?
+                    </p>
+
+                    <div class="d-flex justify-content-center gap-3">
+                        <a asp-controller="Persona" asp-action="Index" class="btn btn-outline-secondary px-4">
+                            <i class="bi bi-x"></i> Cancelar
+                        </a>
+
+                        <button type="submit" class="btn btn-danger px-4">
+                            <i class="bi bi-trash3-fill me-1"></i> Eliminar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

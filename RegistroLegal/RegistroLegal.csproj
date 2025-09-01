@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Aplications\RegistroLegal.Core.Aplications.csproj" />
+    <ProjectReference Include="..\Persistance\RegistroLegal.Infraestructura.Persistance.csproj" />
+    <ProjectReference Include="..\RegistroLegal.Core.Domain\RegistroLegal.Core.Domain.csproj" />
+    <ProjectReference Include="..\RegistroLegal.Infraestructura.Identity\RegistroLegal.Infraestructura.Identity.csproj" />
+    <ProjectReference Include="..\RegistroLegal.Infraestructura.Share\RegistroLegal.Infraestructura.Share.csproj" />
+  </ItemGroup>
+
+</Project>

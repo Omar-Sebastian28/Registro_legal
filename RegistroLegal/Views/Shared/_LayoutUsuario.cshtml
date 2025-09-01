@@ -1,0 +1,181 @@
+﻿@{
+    var userSesion = await _userManager.GetUserAsync(User);
+    var user = await _userManager.FindByNameAsync(userSesion?.UserName ?? "");
+    var fotoPerfil = user?.ImagenPerfil;
+    var userName = user?.UserName;
+    var email = user?.Email;
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - RegistroLegal</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/RegistroLegal.styles.css" asp-append-version="true" />
+
+    <style>
+        body {
+            background-color: #f9fafb;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #212529;
+        }
+
+        .navbar {
+            border-bottom: 1px solid #e5e7eb;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand {
+            font-size: 1.25rem;
+            letter-spacing: -0.5px;
+        }
+
+        .navbar-nav .nav-link {
+            padding: 0.6rem 1rem;
+            transition: color 0.2s ease, font-weight 0.2s ease;
+        }
+
+        .navbar-nav .nav-link:hover,
+        .navbar-nav .nav-link.active {
+            color: #198754 !important;
+            font-weight: 600;
+        }
+
+        .dropdown-menu {
+            border-radius: 0.75rem;
+            border: none;
+        }
+
+        .shadow-sm {
+            box-shadow: 0px 1px 3px rgba(0,0,0,.08), 0px 2px 6px rgba(0,0,0,.04) !important;
+        }
+
+        footer {
+            font-size: 0.9rem;
+        }
+
+        a {
+            transition: color 0.2s ease, background 0.2s ease;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+ 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 sticky-top">
+            <div class="container-fluid">
+
+
+                <a class="navbar-brand fw-bold text-success d-flex align-items-center gap-2"
+                   asp-controller="Home" asp-action="Index">
+                    <i class="bi bi-bank2 fs-4"></i> RegistroLegal
+                </a>
+
+		
+				<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link @(ViewData["Title"]?.ToString() == "Home" ? "active fw-semibold" : "")"
+                               asp-controller="Home" asp-action="Index">
+                                <i class="bi bi-house-door me-1"></i> Inicio
+                            </a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="registrosDropdown"
+                               role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-journal-text me-1"></i> Registros
+                            </a>
+                            <ul class="dropdown-menu shadow-sm rounded-3" aria-labelledby="registrosDropdown">
+                                <li><a class="dropdown-item" asp-controller="Persona" asp-action="Index"><i class="bi bi-person-badge me-2"></i> Personas</a></li>
+                                <li><a class="dropdown-item" asp-controller="Infraccion" asp-action="Index"><i class="bi bi-exclamation-triangle me-2"></i> Infracciones</a></li>
+                                <li><a class="dropdown-item" asp-controller="Medio" asp-action="Index"><i class="bi bi-newspaper me-2"></i> Medios de Noticia</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link @(ViewData["Title"]?.ToString() == "Gestión de Carpetas" ? "active fw-semibold" : "")"
+                               asp-controller="Carpeta" asp-action="Index">
+                                <i class="bi bi-folder2-open me-1"></i> Carpetas
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Perfil usuario estilo Gmail -->
+                    <div class="dropdown ms-3">
+                        <a class="d-flex align-items-center text-decoration-none dropdown-toggle" href="#" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="@fotoPerfil" alt="Foto de perfil" width="40" height="40" class="rounded-circle shadow-sm border border-1 border-secondary">
+                            <span class="ms-2 fw-semibold text-dark">@userName</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end shadow-sm rounded-3 mt-2" aria-labelledby="userDropdown" style="min-width: 240px;">
+                            <li class="px-3 py-2">
+                                <div class="d-flex align-items-center">
+                                    <img src="@fotoPerfil" alt="Foto de perfil" width="50" height="50" class="rounded-circle shadow-sm me-2 border border-1 border-secondary">
+                                    <div>
+                                        <div class="fw-semibold">@userName</div>
+                                        <small class="text-muted">@email</small>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2" asp-controller="User" asp-action="Edit">
+                                    <i class="bi bi-pencil-square"></i> Editar Perfil
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center gap-2 text-danger" asp-controller="User" asp-action="Delete">
+                                    <i class="bi bi-x-lg"></i> Eliminar Cuenta
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <form asp-controller="Login" asp-action="LogOut" class="m-0">
+                                    <button type="submit" class="dropdown-item d-flex align-items-center gap-2">
+                                        <i class="bi bi-box-arrow-right"></i> Cerrar sesión
+                                    </button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container my-5 flex-grow-1">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-top py-3 mt-auto">
+        <div class="container text-center text-muted small">
+            &copy; @DateTime.Now.Year · <span class="fw-semibold">RegistroLegal</span> ·
+            <a asp-controller="Login" asp-action="Index" class="text-decoration-none text-success fw-semibold">Privacidad</a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,24 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using RegistroLegal.Core.Aplications.ViewModel.VmIlicito
+@using RegistroLegal.Core.Aplications.Dto.PersonaDto 
+
+@using RegistroLegal.Core.Aplications.ViewModel.VmMedio
+@using RegistroLegal.Core.Aplications.Dto.DtoMedio
+
+@using RegistroLegal.Core.Aplications.ViewModel.VmPersona
+
+@using RegistroLegal.Core.Aplications.ViewModel.VmUser
+
+@using RegistroLegal.Core.Aplications.ViewModel.VmCarpeta
+
+@using RegistroLegal.Core.Aplications.ViewModel.VmInfraccionCarpeta
+@using RegistroLegal.Core.Aplications.Dto.DtoInfraccionCarpeta
+@using RegistroLegal.Core.Aplications.Dto.IlicitoDto
+
+@using RegistroLegal.Core.Aplications.Interfaces
+@using RegistroLegal.Core.Domain.Enums.RolesUser
+
+@using Microsoft.AspNetCore.Identity
+@using RegistroLegal.Infraestructura.Identity.Entities
+@inject UserManager<AppUser> _userManager
+

@@ -1,0 +1,91 @@
+﻿@model List<BasicUserViewModel>
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Registro de usuarios";
+}
+
+<div class="container py-5">
+
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+        <div>
+            <h1 class="h3 fw-bold text-primary mb-1">
+                👥 Usuarios Registrados
+            </h1>
+            <p class="text-muted small mb-0">
+                Gestión de usuarios activos en el sistema
+            </p>
+        </div>
+        <div class="d-flex gap-2">
+            <a class="btn btn-success shadow-sm" asp-controller="User" asp-action="Create">
+                <i class="bi bi-person-plus-fill me-1"></i> Nuevo usuario
+            </a>
+        </div>
+    </div>
+
+    <!-- Sin usuarios -->
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info text-center py-5 rounded-4 shadow-sm">
+            <i class="bi bi-info-circle me-2 fs-5"></i>
+            <span class="fw-semibold">No hay registros de usuarios aún.</span>
+        </div>
+    }
+    else
+    {
+        <!-- Grid de usuarios -->
+        <div class="row g-4">
+            @foreach (var item in Model)
+            {
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-card">
+
+                        <!-- Imagen de usuario -->
+                        <div class="text-center pt-4 pb-2">
+                            <img src="@item.ImagenPerfil"
+                                 alt="@item.Nombre"
+                                 class="rounded-circle border shadow-sm mb-3"
+                                 style="width: 90px; height: 90px; object-fit: cover;"
+                                 onerror="this.src='/images/default-user.png'" />
+                            <h5 class="fw-semibold mb-1">@item.Nombre @item.Apellido</h5>
+                            <span class="badge bg-primary-subtle text-primary fw-semibold">
+                                @item.Role
+                            </span>
+                        </div>
+
+                        <!-- Info -->
+                        <div class="card-body pt-3 pb-0">
+                            <p class="mb-1 text-muted small"><i class="bi bi-person-badge me-1"></i> <strong>Usuario:</strong> @item.UserName</p>
+                            <p class="mb-1 text-muted small"><i class="bi bi-envelope me-1"></i> <strong>Email:</strong> @item.Email</p>
+                            <p class="mb-3 text-muted small"><i class="bi bi-phone me-1"></i> <strong>Teléfono:</strong> @item.Phone</p>
+                        </div>
+
+                        <!-- Acciones -->
+                        <div class="card-footer bg-light border-0 d-flex justify-content-between px-3 py-3">
+                            <a asp-controller="User" asp-action="Edit" asp-route-id="@item.Id"
+                               class="btn btn-sm btn-outline-primary px-3 shadow-sm">
+                                <i class="bi bi-pencil-square me-1"></i> Editar
+                            </a>
+                            <a asp-controller="User" asp-action="Delete" asp-route-id="@item.Id"
+                               class="btn btn-sm btn-outline-danger px-3 shadow-sm">
+                                <i class="bi bi-trash me-1"></i> Eliminar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+<style>
+    .hover-card {
+        transition: all 0.25s ease-in-out;
+    }
+
+        .hover-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,.12) !important;
+        }
+</style>
+

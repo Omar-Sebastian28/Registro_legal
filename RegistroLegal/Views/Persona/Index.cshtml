@@ -1,0 +1,154 @@
+﻿@if (User.IsInRole(Roles.Usuario.ToString()))
+{
+    Layout = "_LayoutUsuario";
+}
+@model List<PersonaViewModelBasic>
+
+@{
+    ViewData["Title"] = "Listado de Personas con Infracciones";
+}
+
+<div class="container my-5">
+
+    <!-- Header principal -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-5">
+        <div>
+            <h1 class="fw-bold text-dark mb-2">Personas con Infracciones</h1>
+            <p class="text-muted mb-0">Listado actualizado de personas registradas en el sistema</p>
+        </div>
+        <a class="btn btn-gradient-success rounded-pill shadow px-4 mt-3 mt-md-0"
+           asp-controller="Persona" asp-action="Create">
+            <i class="bi bi-person-fill-add me-2"></i> Nueva Persona
+        </a>
+    </div>
+
+    <!-- Subheader carpeta -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="h4 fw-bold text-primary mb-0">Buscar Persona</h2>
+    </div>
+
+    <!-- Filtros -->
+    <div class="card border-0 shadow-sm rounded-4 mb-5">
+        <div class="card-body">
+            <form asp-action="Index" asp-controller="Persona" method="GET" class="row g-3 align-items-end">
+                <div class="col-md-4">
+                    <label for="nombrePersona" class="form-label fw-semibold">Nombre</label>
+                    <input type="text" name="nombrePersona" class="form-control rounded-pill shadow-sm" placeholder="Buscar por nombre" />
+                </div>
+
+                <div class="col-md-4">
+                    <label for="cedula" class="form-label fw-semibold">Cédula</label>
+                    <input type="text" name="cedula" class="form-control rounded-pill shadow-sm" placeholder="Buscar por cédula" />
+                </div>
+
+                <div class="col-md-4 d-flex justify-content-end">
+                    <button type="submit" class="btn btn-gradient-success rounded-pill px-4 shadow">
+                        <i class="bi bi-funnel-fill me-1"></i> Filtrar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sin resultados -->
+    @if (!Model.Any())
+    {
+        <div class="text-center my-5 py-5">
+            <i class="bi bi-people text-secondary" style="font-size: 3rem;"></i>
+            <h4 class="text-muted mt-3">No hay personas registradas aún.</h4>
+        </div>
+    }
+    else
+    {
+        <div class="row g-4">
+            @foreach (var item in Model)
+            {
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card person-card h-100 border-0 rounded-4 overflow-hidden shadow">
+
+                        <!-- Imagen con badge -->
+                        <div class="position-relative overflow-hidden">
+                            <img src="@item.FotoPersona"
+                                 class="w-100"
+                                 alt="@item.NombrePersona @item.Apellido"
+                                 style="height: 220px; object-fit: cover;">
+                            <span class="position-absolute top-0 start-0 m-3 badge bg-gradient-danger shadow px-3 py-2 fs-6">
+                                <i class="bi bi-exclamation-triangle-fill me-1"></i>
+                                @item.CantidadCrimenes @((item.CantidadCrimenes == 1) ? "infracción" : "infracciones")
+                            </span>
+                        </div>
+
+                        <!-- Información -->
+                        <div class="card-body">
+                            <h5 class="card-title mb-1 fw-bold text-capitalize text-dark">
+                                @item.NombrePersona @item.Apellido
+                            </h5>
+                            <p class="text-muted small mb-3">Cédula: @item.Cedula</p>
+
+                            <ul class="list-unstyled mb-0 small">
+                                <li class="mb-2">
+                                    <i class="bi bi-flag-fill me-2 text-primary"></i>
+                                    <strong>Nacionalidad:</strong> @item.Nacionalidad
+                                </li>
+                                <li>
+                                    <i class="bi bi-telephone-fill me-2 text-primary"></i>
+                                    <strong>Teléfono:</strong> @item.Telefono
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Acciones -->
+                        <div class="card-footer bg-light border-0 d-flex justify-content-between px-3 py-3">
+                            <a asp-controller="Persona" asp-action="Edit" asp-route-id="@item.Id"
+                               class="btn btn-outline-warning btn-sm rounded-pill px-3 shadow-sm">
+                                <i class="bi bi-pencil-square me-1"></i> Editar
+                            </a>
+                            <a asp-controller="Persona" asp-action="Delete" asp-route-id="@item.Id"
+                               class="btn btn-outline-danger btn-sm rounded-pill px-3 shadow-sm">
+                                <i class="bi bi-trash me-1"></i> Eliminar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+<style>
+    /* Botón con degradado moderno */
+    .btn-gradient-success {
+        background: linear-gradient(90deg, #28a745, #20c997);
+        color: #fff !important;
+        border: none;
+    }
+
+        .btn-gradient-success:hover {
+            background: linear-gradient(90deg, #20c997, #28a745);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+            transform: translateY(-2px);
+        }
+
+    /* Badge degradado */
+    .bg-gradient-danger {
+        background: linear-gradient(90deg, #dc3545, #ff6b6b);
+    }
+
+    /* Card Hover */
+    .person-card {
+        transition: all 0.3s ease-in-out;
+    }
+
+        .person-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 28px rgba(0,0,0,0.15);
+        }
+
+        .person-card img {
+            transition: transform 0.5s ease;
+        }
+
+        .person-card:hover img {
+            transform: scale(1.08);
+        }
+</style>

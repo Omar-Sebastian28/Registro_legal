@@ -1,0 +1,179 @@
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\jquery\dist\jquery.min.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\jquery\dist\jquery.slim.min.js
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\css\site.css
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\jquery\dist\jquery.min.js
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\favicon.ico
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\jquery\dist\jquery.slim.js
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap.css
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\jquery-validation\dist\additional-methods.js
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\jquery\dist\jquery.slim.min.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\jquery\dist\jquery.js
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\jquery-validation\LICENSE.md
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\jquery-validation\dist\jquery.validate.js
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\js\site.js
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\js\bootstrap.js
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\css\site.css
+wwwroot\favicon.ico
+wwwroot\Image\Persona\1\0d1312ae-0d53-4e72-aa6d-1cd56fb0e5e5.png
+wwwroot\Image\Persona\1008\4a12945f-a78b-4b8a-b0c8-586bd88869ec.png
+wwwroot\Image\Persona\1008\93fb1c31-fdc1-429c-a5d3-dc86edf9624a.png
+wwwroot\Image\Persona\1009\632cc33c-96d8-4d70-87d8-bc33339dfe5b.png
+wwwroot\Image\Persona\1010\4d6c2a45-5457-4e6b-9eda-7c371f688f3d.png
+wwwroot\Image\Persona\1010\ed04a056-63ad-4db7-9804-cf8e22e40f9a.png
+wwwroot\Image\Persona\1011\6a6414f9-3f62-42e8-8c3c-886ec3a9b94a.png
+wwwroot\Image\Persona\1011\ec83a384-7314-4fd8-a82b-cb1be904cf0b.png
+wwwroot\Image\Persona\1011\f0416768-abe2-46ea-b396-1e37a9dbcd80.png
+wwwroot\Image\Persona\1012\e38043b1-ee20-4316-aae9-ce480c1944bc.png
+wwwroot\Image\Persona\1013\f2a521ac-518d-47b5-945b-d09944d6ee88.png
+wwwroot\Image\Persona\1014\f2cb9eea-e2ce-4292-8f88-85825ce8f278.png
+wwwroot\Image\Persona\1015\285e65b6-ae5c-4757-8488-96f7291e3d1d.png
+wwwroot\Image\Persona\1016\fcbd97f3-df20-44e8-9619-e61b30bc1908.jpg
+wwwroot\Image\Persona\1017\b6d09588-1f7d-470f-8bb5-826a5dfdc8f9.jpg
+wwwroot\Image\Persona\1017\c6dccef4-34cf-404a-8734-14defd6c8b5d.jpg
+wwwroot\Image\Persona\1019\479a5e86-9483-4741-a9dd-cb4927955fbd.jpg
+wwwroot\Image\Persona\1020\4e3ba124-2131-48dc-a19e-9f979d3f4ad5.jpg
+wwwroot\Image\Persona\1021\6ea4f565-2de3-467c-862f-21e175c6b899.jpg
+wwwroot\Image\Persona\1023\583c9de1-8b70-4643-bbc0-638113a1063e.jpg
+wwwroot\Image\Persona\1024\47cd3814-b446-49e2-9e33-351e20743c4c.jpg
+wwwroot\Image\Persona\1025\394a7086-3f36-43c6-b725-d64134142484.jpg
+wwwroot\Image\Persona\2\58afba38-9635-4546-8f4e-05964db93aa9.png
+wwwroot\Image\Persona\3\c0651c09-e1e9-4736-a9af-0dd8fec6d181.png
+wwwroot\Image\Persona\3\df5472d8-879d-44bf-aa97-b6ae9defd518.png
+wwwroot\Image\Persona\4\8cea25bd-e1a6-4af7-929b-74b3538c4eaf.png
+wwwroot\Image\Persona\5\38a485b6-f8c3-48c4-b8ab-079a65a04784.png
+wwwroot\Image\Persona\6\7c2f203b-8b6e-4011-bad3-1d931638e8bb.jpg
+wwwroot\Image\Persona\7\c944a639-109a-47a2-95da-697d0b4d6b2e.png
+wwwroot\Image\User\0f23d08d-d607-4449-92b1-3d05d04c5a0e\3426910d-9db3-40bc-9c35-5bd4dac85e3b.png
+wwwroot\Image\User\22\de2448f6-2ade-40ee-aedc-7bdfdc80321b.png
+wwwroot\Image\User\25\3a9613cc-18ed-420a-a217-523dd6b378a1.png
+wwwroot\Image\User\25\e646f9c5-2d86-4394-8328-2e1dd64a62e0.png
+wwwroot\Image\User\27\072001ab-72fb-4c9f-b46c-4a18abdee464.png
+wwwroot\Image\User\2c80c70f-cd1f-4e4e-a08f-317c46925fcc\881662e0-aaae-496e-92eb-d4711da28a01.png
+wwwroot\Image\User\2c80c70f-cd1f-4e4e-a08f-317c46925fcc\8b845a24-a77e-4729-8fc0-ee4c9dc5517b.png
+wwwroot\Image\User\2c80c70f-cd1f-4e4e-a08f-317c46925fcc\fee0cfc3-b9f7-471e-bf1c-4a47dd851347.png
+wwwroot\Image\User\2c80c70f-cd1f-4e4e-a08f-317c46925fcc\ff0a8f04-a3ae-4c91-a9a0-dd6a91cc8efc.png
+wwwroot\Image\User\54821fb0-2a50-433a-a5e2-be384af633d8\1002a045-351c-4c2d-a1e4-654e65f64e8e.png
+wwwroot\Image\User\54821fb0-2a50-433a-a5e2-be384af633d8\2ab74c29-d043-4bc8-91a1-7aa5a79575ac.png
+wwwroot\Image\User\54821fb0-2a50-433a-a5e2-be384af633d8\ca9e4bff-2caf-4699-ba29-d80c3c1a72e0.png
+wwwroot\Image\User\54821fb0-2a50-433a-a5e2-be384af633d8\d1b9dba4-8ac7-4929-bef0-217272f3c557.png
+wwwroot\Image\User\54821fb0-2a50-433a-a5e2-be384af633d8\e3b45388-50a8-443f-82f5-28c6373cb7ea.png
+wwwroot\Image\User\54821fb0-2a50-433a-a5e2-be384af633d8\e93a1f02-1135-4c36-878b-0df08f83170a.png
+wwwroot\Image\User\54821fb0-2a50-433a-a5e2-be384af633d8\ef69aad6-9a3b-4bfe-b9c6-cdced6010938.png
+wwwroot\Image\User\5b557aed-5262-4a54-a83b-409f3bd15b5c\08a896ec-b422-4f3d-8dd7-bd75fdce1a74.png
+wwwroot\Image\User\7e30d2ac-c88b-4de7-a134-d618ec4d3ee3\103ec404-5a0b-4dd7-9a68-82c443c98896.png
+wwwroot\Image\User\7e30d2ac-c88b-4de7-a134-d618ec4d3ee3\aad43732-902f-4409-a95f-88b2004b5fe9.png
+wwwroot\Image\User\853a115f-e61b-4d4c-8729-0b512292b34b\e23535de-c286-42c7-8a96-df4a46014883.jpg
+wwwroot\Image\User\cd423d76-e7a4-40ef-b6b9-352b29c30189\94157b01-54e5-4add-9d95-b48c361924d6.png
+wwwroot\Image\Users\27\b3413395-a4a6-4578-9d34-4bee08678bcc.png
+wwwroot\Image\Users\db5ce489-cb0a-4b8a-a7ec-fa5cced7a0cc\11d452ad-20ca-49e9-bc90-536475556fe4.png
+wwwroot\Image\Users\e4f48eff-23ec-42c7-8ed7-b0ea62a4f65c\f3312a7e-1388-4988-9181-a2d2000d9eb0.png
+wwwroot\Image\Users\e85b91be-03d9-40c1-9da8-e3c768c0e8bf\616942cf-a286-4aa1-a0f3-58f6540bd084.jpg
+wwwroot\js\site.js
+wwwroot\lib\bootstrap\dist\css\bootstrap.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css
+wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.js.map
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js
+wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map
+wwwroot\lib\bootstrap\LICENSE
+wwwroot\lib\jquery\dist\jquery.js
+wwwroot\lib\jquery\dist\jquery.min.js
+wwwroot\lib\jquery\dist\jquery.min.map
+wwwroot\lib\jquery\dist\jquery.slim.js
+wwwroot\lib\jquery\dist\jquery.slim.min.js
+wwwroot\lib\jquery\dist\jquery.slim.min.map
+wwwroot\lib\jquery\LICENSE.txt
+wwwroot\lib\jquery-validation\dist\additional-methods.js
+wwwroot\lib\jquery-validation\dist\additional-methods.min.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.js
+wwwroot\lib\jquery-validation\dist\jquery.validate.min.js
+wwwroot\lib\jquery-validation\LICENSE.md
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js
+wwwroot\lib\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js
+wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt

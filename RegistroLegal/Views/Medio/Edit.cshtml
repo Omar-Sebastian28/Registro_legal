@@ -1,0 +1,61 @@
+﻿@if (User.IsInRole(Roles.Usuario.ToString()))
+{
+    Layout = "_LayoutUsuario";
+}
+@model CreateMedioViewModel
+
+@{
+    ViewData["Title"] = "Edición de Noticia";
+}
+
+<div class="container mt-5">
+    <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+        <div class="card shadow-lg border-0 rounded-4">
+            <div class="card-header bg-success text-white text-center rounded-top-4">
+                <h4 class="mb-0">Editar Noticia</h4>
+            </div>
+
+            <div class="card-body p-4">
+                <form asp-controller="Medio" asp-action="Edit" method="post" enctype="multipart/form-data">
+                    @Html.AntiForgeryToken()
+                    <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                    <!-- Nombre del Medio -->
+                    <div class="mb-3">
+                        <label asp-for="NombreMedio" class="form-label">Nombre del medio</label>
+                        <input asp-for="NombreMedio" class="form-control" placeholder="Ej: Diario Libre, CDN, etc." />
+                        <span asp-validation-for="NombreMedio" class="text-danger small"></span>
+                    </div>
+
+                    <!-- Descripción -->
+                    <div class="mb-3">
+                        <label asp-for="Descripcion" class="form-label">Descripción</label>
+                        <textarea asp-for="Descripcion" class="form-control" rows="3" placeholder="Breve descripción..."></textarea>
+                        <span asp-validation-for="Descripcion" class="text-danger small"></span>
+                    </div>
+
+                    <!-- Link de Referencia -->
+                    <div class="mb-3">
+                        <label asp-for="LinkReferencia" class="form-label">Link de Referencia</label>
+                        <input asp-for="LinkReferencia" class="form-control" type="url" placeholder="https://ejemplo.com" />
+                        <span asp-validation-for="LinkReferencia" class="text-danger small"></span>
+                    </div>
+
+                    <!-- Imagen -->
+                    <div class="mb-3">
+                        <label asp-for="Foto" class="form-label">Imagen</label>
+                        <input asp-for="Foto" class="form-control" />
+                        <span asp-validation-for="Foto" class="text-danger small"></span>
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="d-flex justify-content-between">
+                        <a asp-controller="Medio" asp-action="Index" class="btn btn-outline-secondary"> <i class="bi bi-x"></i> Cancelar</a>
+                        <button type="submit" class="btn btn-success"><i class="bi bi-floppy2"></i> Guardar Cambios</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+

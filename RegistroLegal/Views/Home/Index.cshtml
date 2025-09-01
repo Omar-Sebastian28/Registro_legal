@@ -1,0 +1,136 @@
+﻿@{
+    var user = ViewBag.User as BasicUserViewModel;
+    var userSesion = await _userManager.GetUserAsync(User);
+    var userName = await _userManager.FindByIdAsync(userSesion?.Id ?? "");
+}
+
+@if (User.IsInRole(Roles.Usuario.ToString()))
+{
+    Layout = "_LayoutUsuario";
+}
+<div class="container my-5">
+
+    <!-- Bienvenida -->
+    <div class="alert alert-primary text-center shadow-sm rounded-4 py-3">
+        <h5 class="mb-0">Welcome, <strong>@userName?.UserName</strong> </h5>
+        <small class="text-muted">Resumen de tu actividad en el sistema</small>
+    </div>
+
+    <!-- Estadísticas rápidas -->
+    <div class="row g-4 mt-4">
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card shadow-sm border-0 rounded-4 hover-lift p-3">
+                <div class="d-flex align-items-center">
+                    <div class="icon bg-success text-white rounded-circle p-3 me-3">
+                        <i class="bi bi-person-fill"></i>
+                    </div>
+                    <div>
+                        <h6 class="text-muted mb-1">Personas Registradas</h6>
+                        <h4 class="fw-semibold mb-0">125</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card shadow-sm border-0 rounded-4 hover-lift p-3">
+                <div class="d-flex align-items-center">
+                    <div class="icon bg-danger text-white rounded-circle p-3 me-3">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                    </div>
+                    <div>
+                        <h6 class="text-muted mb-1">Infracciones Reportadas</h6>
+                        <h4 class="fw-semibold mb-0">42</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card shadow-sm border-0 rounded-4 hover-lift p-3">
+                <div class="d-flex align-items-center">
+                    <div class="icon bg-warning text-white rounded-circle p-3 me-3">
+                        <i class="bi bi-newspaper"></i>
+                    </div>
+                    <div>
+                        <h6 class="text-muted mb-1">Medios con infracciones</h6>
+                        <h4 class="fw-semibold mb-0">18</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="card shadow-sm border-0 rounded-4 hover-lift p-3">
+                <div class="d-flex align-items-center">
+                    <div class="icon bg-primary text-white rounded-circle p-3 me-3">
+                        <i class="bi bi-calendar-check-fill"></i>
+                    </div>
+                    <div>
+                        <h6 class="text-muted mb-1">Última actividad</h6>
+                        <h4 class="fw-semibold mb-0">25/08/2025</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Listado rápido de infracciones recientes -->
+    <div class="mt-5">
+        <h5 class="fw-bold text-dark mb-3">Últimas infracciones reportadas</h5>
+        <div class="row g-4">
+            @* Ejemplos de tarjetas de infracciones *@
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden hover-lift">
+                    <div class="card-body">
+                        <h6 class="text-primary fw-semibold mb-2 text-truncate">Fraude financiero</h6>
+                        <p class="text-muted small mb-1"><strong>Persona:</strong> Juan Pérez</p>
+                        <p class="text-muted small mb-1"><strong>Medio:</strong> Diario Hoy</p>
+                        <p class="text-muted small mb-0"><strong>Fecha:</strong> 23/08/2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden hover-lift">
+                    <div class="card-body">
+                        <h6 class="text-primary fw-semibold mb-2 text-truncate">Incumplimiento laboral</h6>
+                        <p class="text-muted small mb-1"><strong>Persona:</strong> María López</p>
+                        <p class="text-muted small mb-1"><strong>Medio:</strong> Noticias RD</p>
+                        <p class="text-muted small mb-0"><strong>Fecha:</strong> 21/08/2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm border-0 rounded-4 overflow-hidden hover-lift">
+                    <div class="card-body">
+                        <h6 class="text-primary fw-semibold mb-2 text-truncate">Violación de normas</h6>
+                        <p class="text-muted small mb-1"><strong>Persona:</strong> Pedro Martínez</p>
+                        <p class="text-muted small mb-1"><strong>Medio:</strong> Diario Libre</p>
+                        <p class="text-muted small mb-0"><strong>Fecha:</strong> 20/08/2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Hover sutil y profesional */
+    .hover-lift {
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+    .icon {
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>

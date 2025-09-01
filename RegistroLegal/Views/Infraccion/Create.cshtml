@@ -1,0 +1,104 @@
+﻿@if (User.IsInRole(Roles.Usuario.ToString()))
+{
+    Layout = "_LayoutUsuario";
+}
+@model CreateIlicitoViewModel
+
+@{
+    ViewData["Title"] = "Registrar Nueva Infracción";
+}
+
+<div class="col-12 col-md-8 offset-md-2 mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white text-center">
+            <h4>Registro de Infracción</h4>
+        </div>
+
+        <div class="card-body">
+            <form asp-controller="Infraccion" asp-action="Create" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="CreatedById">
+
+                <div class="mb-3">
+                    <label asp-for="Tipo" class="form-label">Tipo de Infracción</label>
+                    <input asp-for="Tipo" class="form-control" />
+                    <span asp-validation-for="Tipo" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Descripcion" class="form-label">Descripción</label>
+                    <textarea asp-for="Descripcion" class="form-control"></textarea>
+                    <span asp-validation-for="Descripcion" class="text-danger"></span>
+                </div>
+                
+                <div class="mb-3">
+                    <label asp-for="PersonaId" class="form-label">Persona Involucrada</label>
+                    <select asp-for="PersonaId" class="form-select">
+                        <option value="0">Selecciona la persona asociada con el cargo ilícito</option>
+
+                        @{
+                            var personas = ViewBag.persona as List<DtoPersona>;
+                        }
+
+                        @if (personas != null && personas.Any())
+                        {
+                            foreach (var persona in personas)
+                            {
+                                <option value="@persona.Id">@persona.NombrePersona @persona.Apellido</option>
+                            }
+                        }
+                        else
+                        {
+                            <option disabled>No hay personas disponibles</option>
+                        }
+                    </select>
+                   
+                </div>
+                <div class="mb-3">
+                    <label asp-for="MedioId" class="form-label">Medio de noticias involucrado</label>
+                    <select asp-for="MedioId" class="form-select">
+                        <option value="0">Selecciona la persona asociada con el cargo ilícito</option>
+
+                        @{
+                            var medios = ViewBag.medio as List<MedioDto>;
+                        }
+
+                        @if (medios != null && medios.Any())
+                        {
+                            foreach (var medio in medios)
+                            {
+                                <option value="@medio.Id">@medio.NombreMedio</option>
+                            }
+                        }
+                        else
+                        {
+                            <option disabled>No hay medios disponibles</option>
+                        }
+                    </select>              
+                </div>
+
+
+                <div class="mb-3">
+                    <label asp-for="FechaAcusacion" class="form-label">Fecha de Acusación</label>
+                    <input asp-for="FechaAcusacion" class="form-control" type="date"
+                           value="@(Model.FechaAcusacion == default ? DateTime.Today.ToString("yyyy-MM-dd") : Model.FechaAcusacion.ToString("yyyy-MM-dd"))" />
+                    <span asp-validation-for="FechaAcusacion" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="FechaFin" class="form-label">Fecha de Cierre (opcional)</label>
+                    <input asp-for="FechaFin" class="form-control" type="date"
+                           value="@(Model.FechaFin.HasValue? Model.FechaFin.Value.ToString("yyyy-MM-dd") : "")" />
+                </div>
+
+
+
+                <div class="d-flex justify-content-between">
+                    <a asp-controller="Infraccion" asp-action="Index" class="btn btn-outline-secondary"> <i class="bi bi-x"></i> Cancelar</a>
+                    <button type="submit" class="btn btn-success"><i class="bi bi-floppy2"></i> Guardar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

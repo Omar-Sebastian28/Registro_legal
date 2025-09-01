@@ -1,0 +1,11 @@
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Core.Domain\bin\Debug\net9.0\RegistroLegal.Core.Domain.deps.json
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Core.Domain\bin\Debug\net9.0\RegistroLegal.Core.Domain.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Core.Domain\bin\Debug\net9.0\RegistroLegal.Core.Domain.pdb
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Core.Domain\obj\Debug\net9.0\RegistroLegal.Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Core.Domain\obj\Debug\net9.0\RegistroLegal.Core.Domain.AssemblyInfoInputs.cache
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Core.Domain\obj\Debug\net9.0\RegistroLegal.Core.Domain.AssemblyInfo.cs
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Core.Domain\obj\Debug\net9.0\RegistroLegal.Core.Domain.csproj.CoreCompileInputs.cache
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Core.Domain\obj\Debug\net9.0\RegistroLegal.Core.Domain.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Core.Domain\obj\Debug\net9.0\refint\RegistroLegal.Core.Domain.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Core.Domain\obj\Debug\net9.0\RegistroLegal.Core.Domain.pdb
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Core.Domain\obj\Debug\net9.0\ref\RegistroLegal.Core.Domain.dll

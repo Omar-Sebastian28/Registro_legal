@@ -1,0 +1,15 @@
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\bin\Debug\net9.0\Aplications.deps.json
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\bin\Debug\net9.0\Aplications.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\bin\Debug\net9.0\Aplications.pdb
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\bin\Debug\net9.0\Persistance.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\bin\Debug\net9.0\Persistance.pdb
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\Aplications.csproj.AssemblyReference.cache
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\Aplications.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\Aplications.AssemblyInfoInputs.cache
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\Aplications.AssemblyInfo.cs
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\Aplications.csproj.CoreCompileInputs.cache
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\Aplicati.46185C78.Up2Date
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\Aplications.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\refint\Aplications.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\Aplications.pdb
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\ref\Aplications.dll

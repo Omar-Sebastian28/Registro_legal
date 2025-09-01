@@ -1,0 +1,15 @@
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\bin\Debug\net9.0\RegistroLegal.Core.Aplications.deps.json
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\bin\Debug\net9.0\RegistroLegal.Core.Aplications.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\bin\Debug\net9.0\RegistroLegal.Core.Aplications.pdb
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\bin\Debug\net9.0\RegistroLegal.Core.Domain.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\bin\Debug\net9.0\RegistroLegal.Core.Domain.pdb
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\RegistroLegal.Core.Aplications.csproj.AssemblyReference.cache
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\RegistroLegal.Core.Aplications.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\RegistroLegal.Core.Aplications.AssemblyInfoInputs.cache
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\RegistroLegal.Core.Aplications.AssemblyInfo.cs
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\RegistroLegal.Core.Aplications.csproj.CoreCompileInputs.cache
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\Registro.B14B3A69.Up2Date
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\RegistroLegal.Core.Aplications.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\refint\RegistroLegal.Core.Aplications.dll
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\RegistroLegal.Core.Aplications.pdb
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Aplications\obj\Debug\net9.0\ref\RegistroLegal.Core.Aplications.dll

@@ -1,0 +1,114 @@
+﻿@model List<BasicMedioViewModel>
+
+@{
+    if (User.IsInRole(Roles.Usuario.ToString()))
+    {
+        Layout = "_LayoutUsuario";
+    }
+
+    ViewData["Title"] = "Medios con Infracciones";
+}
+
+<div class="container py-5">
+
+    <div class="d-flex flex-wrap justify-content-between align-items-center mb-4 gap-3">
+        <div>
+            <h1 class="h3 fw-bold text-primary m-0">
+                📑 Medios con Infracciones
+            </h1>
+            <p class="text-muted small m-0">
+                Total de publicaciones:
+                <span class="badge bg-primary rounded-pill fs-6 px-3">
+                    @Model.Count()
+                </span>
+            </p>
+        </div>
+        <a asp-controller="Medio" asp-action="Create" class="btn btn-success px-4 shadow-sm rounded-pill">
+            <i class="bi bi-plus-circle-fill me-2"></i> Registrar publicación
+        </a>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info text-center py-5 rounded-4 shadow-sm">
+            <i class="bi bi-info-circle me-2 fs-5"></i>
+            <span class="fw-semibold">No hay medios registrados aún.</span>
+        </div>
+    }
+    else
+    {
+        <div class="row g-4">
+            @foreach (var item in Model)
+            {
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden hover-shadow">
+
+                        <!-- Imagen -->
+                        <div class="ratio ratio-16x9 bg-light">
+                            <img src="@item.Foto"
+                                 class="img-fluid w-100 h-100"
+                                 style="object-fit: cover;"
+                                 alt="Imagen representativa de @item.NombreMedio">
+                        </div>
+
+                        <!-- Cuerpo -->
+                        <div class="card-body">
+                            <h5 class="card-title fw-semibold text-dark text-truncate mb-2">
+                                @item.NombreMedio
+                            </h5>
+                            <p class="card-text text-muted small mb-3">
+                                @item.Descripcion
+                            </p>
+
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="fw-semibold">Infracciones:</span>
+                                <span class="badge bg-danger rounded-pill fs-6 px-3">
+                                    @item.Publicaciones
+                                </span>
+                            </div>
+
+                            @if (!string.IsNullOrWhiteSpace(item.LinkReferencia))
+                            {
+                                <div class="text-truncate small">
+                                    <strong>Referencia:</strong>
+                                    <a href="@item.LinkReferencia"
+                                       class="text-decoration-none text-primary fw-semibold ms-1"
+                                       target="_blank"
+                                       title="Ver enlace de referencia">
+                                        <i class="bi bi-box-arrow-up-right me-1"></i> Enlace
+                                    </a>
+                                </div>
+                            }
+                        </div>
+
+                        <!-- Footer -->
+                        <div class="card-footer bg-white border-0 pt-0 rounded-bottom">
+                            <div class="d-flex justify-content-between gap-2">
+                                <a asp-controller="Medio" asp-action="Edit" asp-route-id="@item.Id"
+                                   class="btn btn-outline-warning btn-sm flex-fill rounded-pill">
+                                    <i class="bi bi-pencil-square me-1"></i> Editar
+                                </a>
+                                <a asp-controller="Medio" asp-action="Delete" asp-route-id="@item.Id"
+                                   class="btn btn-outline-danger btn-sm flex-fill rounded-pill">
+                                    <i class="bi bi-trash me-1"></i> Eliminar
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>
+
+<style>
+    .hover-shadow {
+        transition: all 0.3s ease-in-out;
+    }
+
+        .hover-shadow:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.1) !important;
+        }
+</style>

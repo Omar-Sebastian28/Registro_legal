@@ -1,0 +1,51 @@
+﻿@model string
+
+@{
+    ViewData["Title"] = "Confirmación de Email";
+    Layout = "_LayoutAnomino";
+
+    bool esExitoso = Model.Contains("Gracias");
+    string tipoAlerta = esExitoso ? "success" : "danger";
+    string icono = esExitoso ? "bi-envelope-check-fill" : "bi-exclamation-triangle-fill";
+    string titulo = esExitoso ? "¡Correo confirmado exitosamente!" : "Error al confirmar el correo";
+}
+
+<div class="row justify-content-center mt-5">
+    <div class="col-12 col-md-8 col-lg-6">
+        <div class="card shadow-lg border-0 rounded-4 animate__animated animate__fadeIn">
+            <div class="card-header bg-@tipoAlerta bg-gradient text-white text-center rounded-top-4 py-4">
+                <h2 class="fw-bold mb-0">
+                    <i class="bi @(esExitoso ? "bi-check-circle-fill" : "bi-x-circle-fill") me-2"></i>
+                    Confirmación de Email
+                </h2>
+            </div>
+
+            <div class="card-body p-4">
+                <div class="alert alert-@tipoAlerta alert-dismissible fade show shadow-sm" role="alert">
+                    <h5 class="alert-heading">
+                        <i class="bi @icono me-2"></i> @titulo
+                    </h5>
+                    <p class="mb-0">@Model</p>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+                </div>
+
+                <div class="text-center mt-4">
+                    @if (esExitoso)
+                    {
+                        <a asp-controller="Login" asp-action="Index"
+                           class="btn btn-success px-4 py-2 rounded-pill shadow-sm">
+                            <i class="bi bi-box-arrow-in-right me-2"></i> Ir al inicio de sesión
+                        </a>
+                    }
+                    else
+                    {
+                        <a asp-controller="Login" asp-action="Index"
+                           class="btn btn-outline-danger px-4 py-2 rounded-pill shadow-sm">
+                            <i class="bi bi-arrow-left-circle me-2"></i> Volver al login
+                        </a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

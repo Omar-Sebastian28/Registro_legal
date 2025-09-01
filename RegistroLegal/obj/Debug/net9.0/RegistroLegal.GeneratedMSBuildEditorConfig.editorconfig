@@ -1,0 +1,169 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RegistroLegal
+build_property.RootNamespace = RegistroLegal
+build_property.ProjectDir = C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Carpeta/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FycGV0YVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Carpeta/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FycGV0YVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Carpeta/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FycGV0YVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Carpeta/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FycGV0YVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/InfraccionCarpeta/AddIlicito.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFjY2lvbkNhcnBldGFcQWRkSWxpY2l0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/InfraccionCarpeta/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFjY2lvbkNhcnBldGFcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/InfraccionCarpeta/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFjY2lvbkNhcnBldGFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Infraccion/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFjY2lvblxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Infraccion/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFjY2lvblxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Infraccion/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFjY2lvblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Infraccion/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5mcmFjY2lvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Login/AccesoDenegado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQWNjZXNvRGVuZWdhZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Login/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQ29uZmlybUVtYWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Login/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cRm9yZ290UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Login/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVzZXRQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Medio/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaW9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Medio/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaW9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Medio/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaW9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Medio/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Persona/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Persona/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Persona/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Persona/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyc29uYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/User/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/User/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/User/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/User/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-nn9dgq68oy
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Shared/_LayoutAnomino.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBbm9taW5vLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-5ucdtmeddi
+
+[C:/Users/omarj/OneDrive/Documentos/Escritorio/IDE/Proyectos C\#/RegistroLegal/Views/Shared/_LayoutUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-8txi4892gs

@@ -1,0 +1,60 @@
+﻿@if (User.IsInRole(Roles.Usuario.ToString()))
+{
+    Layout = "_LayoutUsuario";
+}
+@model CreateInfraccionCarpetaViewModel
+
+@{
+    ViewData["Title"] = "Agregar infracción a la carpeta";
+} 
+
+<div class="col-12 col-md-8 offset-md-2 mt-5">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white text-center">
+            <h4>Añadir elemento a la carpeta</h4>
+        </div>
+
+        <div class="card-body">
+            <form asp-controller="InfraccionCarpeta" asp-action="AddIlicito" method="post">
+                <input type="hidden" asp-for="CarpetaId"/>
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label asp-for="InfraccionId" class="form-label">Persona Involucrada</label>
+                    <select asp-for="InfraccionId" class="form-select">
+                        <option value="0">Selecciona la infraccion que deseas agregar</option>
+
+                        @{
+                            var infracciones = ViewBag.Infracciones as List<DtoBasicIlicito>;
+                        }
+
+                        @if (infracciones is not null && infracciones.Any())
+                        {
+                            foreach (var infraccion in infracciones)
+                            {
+                                <option value="@infraccion.Id">Infraccion: @infraccion.Tipo | Autor: @infraccion?.Persona?.NombrePersona</option>
+                            }
+                        }
+                        else
+                        {
+                            <option disabled>No hay infracciones disponibles</option>
+                        }
+                    </select>
+
+                </div>              
+                <div class="mb-3">
+                    <label asp-for="FechaAgregado" class="form-label">Fecha en que se agrego</label>
+                    <input asp-for="FechaAgregado" class="form-control" type="date" />
+                    <span asp-validation-for="FechaAgregado" class="text-danger"></span>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <a asp-controller="Carpeta" asp-action="Index" class="btn btn-outline-secondary"> <i class="bi bi-x"></i> Cancelar</a>
+                    <button type="submit" class="btn btn-success"><i class="bi bi-floppy2"></i> Guardar elemento</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
