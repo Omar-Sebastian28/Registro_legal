@@ -28,7 +28,7 @@ Este sistema fue diseñado con un enfoque en **calidad, escalabilidad y mantenib
 
 ---
 
-## 📐 Principios de diseño aplicados  
+## Principios de diseño aplicados  
 - **Single Responsibility Principle (SRP)**  
 - **Liskov Substitution Principle (LSP)**  
 - **Interface Segregation Principle (ISP)**  
@@ -38,10 +38,10 @@ Este sistema fue diseñado con un enfoque en **calidad, escalabilidad y mantenib
 
 ##  Valor agregado  
 Este proyecto no fue construido “solo para que funcione”, sino para reflejar la mentalidad de un desarrollador que:  
-✔ Diseña **sistemas sostenibles en el tiempo**  
-✔ Busca **código reutilizable y de fácil mantenimiento**  
-✔ Prioriza la **escalabilidad y buenas prácticas**  
-✔ Implementa un **pensamiento de ingeniería**, no solo programación  
+ -Diseña **sistemas sostenibles en el tiempo**  
+ -Busca **código reutilizable y de fácil mantenimiento**  
+ -Prioriza la **escalabilidad y buenas prácticas**  
+ -Implementa un **pensamiento de ingeniería**, no solo programación  
 
 ---
 
