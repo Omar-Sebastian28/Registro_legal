@@ -45,6 +45,6 @@ Este proyecto no fue construido “solo para que funcione”, sino para reflejar
 
 ---
 
-## 👨‍💻 Autor  
+## Autor  
 **Sebastián Omar**  
 _Backend Developer especializado en .NET y apasionado por la construcción de software robusto, escalable y mantenible._  
