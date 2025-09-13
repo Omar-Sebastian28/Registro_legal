@@ -10,6 +10,7 @@ C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Inf
 C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\obj\Debug\net9.0\RegistroLegal.Infraestructura.Share.AssemblyInfoInputs.cache
 C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\obj\Debug\net9.0\RegistroLegal.Infraestructura.Share.AssemblyInfo.cs
 C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\obj\Debug\net9.0\RegistroLegal.Infraestructura.Share.csproj.CoreCompileInputs.cache
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\obj\Debug\net9.0\RegistroLegal.Infraestructura.Share.sourcelink.json
 C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\obj\Debug\net9.0\Registro.811140CF.Up2Date
 C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\obj\Debug\net9.0\RegistroLegal.Infraestructura.Share.dll
 C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Share\obj\Debug\net9.0\refint\RegistroLegal.Infraestructura.Share.dll

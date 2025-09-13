@@ -32,3 +32,4 @@ namespace RegistroLegal.Infraestructura.Identity.Seeds
         }
     }
 }
+ 

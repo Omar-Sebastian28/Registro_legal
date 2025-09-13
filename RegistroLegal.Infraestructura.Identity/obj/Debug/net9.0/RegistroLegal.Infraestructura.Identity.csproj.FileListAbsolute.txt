@@ -10,6 +10,7 @@ C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Inf
 C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Identity\obj\Debug\net9.0\RegistroLegal.Infraestructura.Identity.AssemblyInfoInputs.cache
 C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Identity\obj\Debug\net9.0\RegistroLegal.Infraestructura.Identity.AssemblyInfo.cs
 C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Identity\obj\Debug\net9.0\RegistroLegal.Infraestructura.Identity.csproj.CoreCompileInputs.cache
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Identity\obj\Debug\net9.0\RegistroLegal.Infraestructura.Identity.sourcelink.json
 C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Identity\obj\Debug\net9.0\Registro.263FE5B1.Up2Date
 C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Identity\obj\Debug\net9.0\RegistroLegal.Infraestructura.Identity.dll
 C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\RegistroLegal.Infraestructura.Identity\obj\Debug\net9.0\refint\RegistroLegal.Infraestructura.Identity.dll

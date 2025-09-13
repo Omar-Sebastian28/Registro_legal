@@ -1,5 +1,4 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using RegistroLegal.Core.Domain.Entity;
 
 namespace RegistroLegal.Infraestructura.Identity.Entities
 {
@@ -10,5 +9,7 @@ namespace RegistroLegal.Infraestructura.Identity.Entities
         public required string Apellido { get; set; }
 
         public string? ImagenPerfil { get; set; }
+
+        public DateTime LastPasswordChangedDate { get; set; }
     }
 }

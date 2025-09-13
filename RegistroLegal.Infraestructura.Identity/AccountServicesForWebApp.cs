@@ -15,7 +15,6 @@ namespace RegistroLegal.Infraestructura.Identity
         private readonly SignInManager<AppUser> _singInManager;
         private readonly IEmailServices _emailServices;
 
-
         public AccountServicesForWebApp(UserManager<AppUser> userManager, SignInManager<AppUser> singInManager, IEmailServices emailServices)
         {
             _userManager = userManager;
@@ -54,7 +53,6 @@ namespace RegistroLegal.Infraestructura.Identity
             }
          
             var result = await _singInManager.PasswordSignInAsync(user.UserName ?? "", loginDto.Password, false, true);
-
             if (!result.Succeeded)
             {
                 response.HasError = true;
@@ -68,7 +66,51 @@ namespace RegistroLegal.Infraestructura.Identity
                 }
                     return response;
             }
-            
+
+
+            var changePassword = (DateTime.UtcNow - user.LastPasswordChangedDate).Days <= 1;
+            if (changePassword) 
+            {
+                await _emailServices.SendAsync(new EmailRequestDto()
+                {
+                    To = user.Email,
+                    Subject = "Advertencia: tu contraseña ha caducado",
+                    HtmlBdy = $@"
+                            <html>
+                            <head>
+                                <style>
+                                    body {{ font-family: Arial, sans-serif; color: #333; margin: 0; padding: 0; background-color: #f4f4f4; }}
+                                    .container {{ max-width: 600px; margin: 40px auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 8px; background-color: #ffffff; }}
+                                    h2 {{ color: #d9534f; }}
+                                    p {{ line-height: 1.6; }}
+                                    .highlight {{ font-weight: bold; color: #d9534f; }}
+                                    .footer {{ margin-top: 30px; font-size: 0.85em; color: #777; text-align: center; }}
+                                </style>
+                            </head>
+                            <body>
+                                <div class='container'>
+                                    <h2>Hola {user.UserName},</h2>
+                                    <p>
+                                        Te informamos que tu contraseña ha superado los 
+                                        <span class='highlight'>30 días de uso</span>.
+                                    </p>
+                                    <p>
+                                        Por motivos de seguridad, es necesario que la cambies al ingresar nuevamente en la aplicación. 
+                                        No podrás continuar utilizando tu cuenta hasta que actualices tu contraseña.
+                                    </p>
+                                    <p>
+                                        Esta medida ayuda a proteger tu información personal y mantener tu cuenta segura.
+                                    </p>
+                                    <div class='footer'>
+                                        <p>Este mensaje fue generado automáticamente. No respondas a este correo.</p>
+                                        <p>&copy; {DateTime.UtcNow.Year} - Tu Aplicación</p>
+                                    </div>
+                                </div>
+                            </body>
+                            </html>"
+                });
+            }
+
             var roles = await _userManager.GetRolesAsync(user);
 
             response.Id = user.Id;
@@ -281,7 +323,8 @@ namespace RegistroLegal.Infraestructura.Identity
                 UserName = saveUserDto.UserName,
                 Email = saveUserDto.Email,
                 EmailConfirmed = false,
-                ImagenPerfil = saveUserDto.ImagenPerfil
+                ImagenPerfil = saveUserDto.ImagenPerfil,
+                LastPasswordChangedDate = DateTime.UtcNow,
             };
 
             try

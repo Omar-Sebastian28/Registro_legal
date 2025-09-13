@@ -4,47 +4,154 @@
     ViewData["Title"] = "Login";
 }
 
-<div class="min-vh-100 d-flex align-items-center justify-content-center bg-light">
-    <div class="col-11 col-sm-8 col-md-6 col-lg-4">
-        <div class="card shadow-lg border-0 rounded-4">
+<main class="min-vh-100 d-flex justify-content-center align-items-center bg-light">
 
-            <div class="card-body p-5 text-center">
-              
-                <div class="mb-4">
-                    <i class="bi bi-shield-lock-fill text-success" style="font-size: 3rem;"></i>
+    <div class="row w-100" style="max-width: 1200px; min-height: 80vh;">
+
+        <!-- Panel izquierdo (branding) -->
+        <aside class="d-none d-lg-flex flex-column justify-content-center align-items-center col-lg-6 text-white p-5 position-relative aside-gradient overflow-hidden">
+
+            <!-- Borde ondulado derecho -->
+            <svg class="position-absolute top-0 end-0 h-100" viewBox="0 0 100 100" preserveAspectRatio="none"
+                 style="width: 120px; height: 100%; fill: rgba(255,255,255,0.1);">
+                <path d="M0,0 C30,50 70,50 100,100 L100,0 Z"></path>
+            </svg>
+
+            <!-- Esquina roja -->
+            <div style="position:absolute; bottom:0; right:0; width:150px; height:150px; background: rgba(220,53,69,0.7); clip-path: polygon(100% 0, 0 100%, 100% 100%);"></div>
+
+            <div class="text-center px-4" style="max-width: 400px; z-index: 1;">
+                <i class="bi bi-shield-lock-fill display-1 mb-4 lock-icon" aria-hidden="true"></i>
+                <h2 class="fw-bold">LegitCheck</h2>
+                <p class="lead">La plataforma diseñada para brindarte control, seguridad y simplicidad.</p>
+            </div>
+        </aside>
+
+        <!-- Panel derecho (formulario) -->
+        <section class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
+            <div class="w-100 px-4 py-5 form-container" style="max-width: 420px;">
+
+                <!-- Header -->
+                <div class="mb-5 text-center">
+                    <h1 class="h3 fw-bold mb-2">Bienvenido</h1>
+                    <p class="text-muted">Ingresa tus credenciales para continuar</p>
                 </div>
 
-                <h3 class="fw-bold mb-3">Bienvenido</h3>
-                <p class="text-muted mb-4">Accede con tu usuario y contraseña para continuar</p>
+                <!-- Validaciones -->
+                @Html.ValidationSummary(false, "", new { @class = "text-danger mb-3 small text-start" })
 
-                @Html.ValidationSummary(false, "", new { @class = "text-danger mb-3 text-start" })
+                <!-- Formulario -->
+                <form asp-controller="Login" asp-action="Index" method="post" novalidate>
 
-                <form asp-controller="Login" asp-action="Index" method="post">
-
+                    <!-- Usuario -->
                     <div class="form-floating mb-3">
-                        <input asp-for="UserName" class="form-control rounded-3" placeholder="Usuario" />
-                        <label asp-for="UserName"><i class="bi bi-person me-2"></i> Usuario</label>
+                        <input asp-for="UserName"
+                               class="form-control rounded-3 border-0 shadow-sm"
+                               placeholder="Usuario"
+                               required
+                               autocomplete="username" />
+                        <label asp-for="UserName">
+                            <i class="bi bi-person me-2" aria-hidden="true"></i> Usuario
+                        </label>
                     </div>
 
-                    <div class="form-floating mb-4">
-                        <input asp-for="Password" type="password" class="form-control rounded-3" placeholder="Contraseña" />
-                        <label asp-for="Password"><i class="bi bi-lock me-2"></i> Contraseña</label>
+                    <!-- Contraseña -->
+                    <div class="form-floating mb-3">
+                        <input asp-for="Password"
+                               type="password"
+                               class="form-control rounded-3 border-0 shadow-sm"
+                               placeholder="Contraseña"
+                               required
+                               autocomplete="current-password" />
+                        <label asp-for="Password">
+                            <i class="bi bi-lock me-2" aria-hidden="true"></i> Contraseña
+                        </label>
                     </div>
 
-                    <button type="submit" class="btn btn-success w-100 rounded-3 py-2 fw-semibold shadow-sm">
-                        <i class="bi bi-box-arrow-in-right me-1"></i> Iniciar sesión
+                    <!-- Opciones -->
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberMe" />
+                            <label for="rememberMe" class="form-check-label small">Recordarme</label>
+                        </div>
+                        <a asp-controller="Login" asp-action="ForgotPassword"
+                           class="small text-success fw-semibold text-decoration-none">
+                            ¿Olvidaste tu contraseña?
+                        </a>
+                    </div>
+
+                    <!-- Botón principal -->
+                    <button type="submit"
+                            class="btn btn-success w-100 rounded-3 py-3 fw-semibold shadow-sm"
+                            style="transition: all 0.2s ease;"
+                            aria-label="Iniciar sesión">
+                        <i class="bi bi-box-arrow-in-right me-2" aria-hidden="true"></i>
+                        Iniciar sesión
                     </button>
                 </form>
 
-                <div class="mt-4">
-                    <a asp-controller="Login" asp-action="ForgotPassword" class="small text-decoration-none">¿Olvidaste tu contraseña?</a>
+                <!-- Footer -->
+                <div class="text-center mt-4 opacity-75">
+                    <small>¿No tienes cuenta?</small>
+                    <a asp-controller="User" asp-action="Create"
+                       class="fw-semibold text-success text-decoration-none ms-1">
+                        Regístrate aquí
+                    </a>
                 </div>
             </div>
-
-            <div class="card-footer bg-white text-center border-0 rounded-bottom-4 py-3">
-                <small class="text-muted">¿No tienes cuenta? </small>
-                <a asp-controller="User" asp-action="Create" class="fw-semibold text-success text-decoration-none">Regístrate aquí</a>
-            </div>
-        </div>
+        </section>
     </div>
-</div>
+</main>
+
+<style>
+    /* 🔥 Gradiente animado panel izquierdo */
+
+    .aside-gradient {
+        background: linear-gradient(135deg, #0d6efd, #198754, #dc3545);
+        background-size: 300% 300%;
+        animation: gradientShift 10s ease infinite;
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    /* 🔥 Glassmorphism para formulario */
+    .form-container {
+        backdrop-filter: blur(10px) saturate(180%);
+        background-color: rgba(255,255,255,0.25);
+        border-radius: 1rem;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+    }
+
+    /* 🔥 Inputs con enfoque elegante */
+    .form-control:focus {
+        border-color: #198754;
+        box-shadow: 0 0 10px rgba(25,135,84,0.5);
+    }
+
+    /* 🔥 Botón animado */
+    .btn-success {
+        background: linear-gradient(45deg, #28a745, #198754);
+        background-size: 200% 200%;
+        transition: all 0.3s ease;
+    }
+
+        .btn-success:hover {
+            background-position: right center;
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(25,135,84,0.4);
+        }
+
+    /* 🔥 Icono principal con microinteracción */
+    .lock-icon {
+        transition: transform 0.3s, filter 0.3s;
+    }
+
+        .lock-icon:hover {
+            transform: scale(1.1);
+            filter: drop-shadow(0 0 15px rgba(255,255,255,0.6));
+        }
+
+    /* 🔥 Tipografía moderna */
+    body {
+        font-family: 'Inter', sans-serif;
+    }
+</style>

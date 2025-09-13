@@ -33,9 +33,7 @@ namespace RegistroLegal.Core.Aplications.ViewModel.VmUser
 
         [Compare(nameof(Password), ErrorMessage = "No coincide la contraseña")]
         [Required(ErrorMessage ="Debes confirmar la contraseña.")]
-        [DataType(DataType.Password  )]
-        [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^a-zA-Z0-9]).{8,}$",
-        ErrorMessage = "Debe tener al menos 8 caracteres, incluyendo mayúsculas, minúsculas, números y símbolos.")]
+        [DataType(DataType.Password)]
         public required string ConfirmPasword { get; set; }
 
         [DataType(DataType.Text)]

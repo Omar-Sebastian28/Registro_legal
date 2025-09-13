@@ -11,10 +11,10 @@ namespace RegistroLegal.Infraestructura.Identity
 {
     public static class ServicesRegistration
     {
+
         public static void AddLayerIdentityForWebApp(this IServiceCollection services, IConfiguration config) 
         {
             GeneralConfiguration(services, config);
-
             #region Configuracion de Identity
 
             services.Configure<IdentityOptions>(opt =>
@@ -26,7 +26,7 @@ namespace RegistroLegal.Infraestructura.Identity
                 opt.Password.RequireUppercase = true;
                 
                 opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
-                opt.Lockout.MaxFailedAccessAttempts = 6;
+                opt.Lockout.MaxFailedAccessAttempts = 3;
 
                 opt.User.RequireUniqueEmail = true;
                 opt.SignIn.RequireConfirmedEmail = true;

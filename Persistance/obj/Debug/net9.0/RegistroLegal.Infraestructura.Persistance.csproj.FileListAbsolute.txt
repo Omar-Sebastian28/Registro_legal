@@ -11,6 +11,7 @@ C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\obj\D
 C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\obj\Debug\net9.0\RegistroLegal.Infraestructura.Persistance.AssemblyInfoInputs.cache
 C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\obj\Debug\net9.0\RegistroLegal.Infraestructura.Persistance.AssemblyInfo.cs
 C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\obj\Debug\net9.0\RegistroLegal.Infraestructura.Persistance.csproj.CoreCompileInputs.cache
+C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\obj\Debug\net9.0\RegistroLegal.Infraestructura.Persistance.sourcelink.json
 C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\obj\Debug\net9.0\Registro.7B9248D2.Up2Date
 C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\obj\Debug\net9.0\RegistroLegal.Infraestructura.Persistance.dll
 C:\Users\omarj\OneDrive\Documentos\Escritorio\IDE\Proyectos C#\Persistance\obj\Debug\net9.0\refint\RegistroLegal.Infraestructura.Persistance.dll

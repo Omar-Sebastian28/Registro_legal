@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RegistroLegal.Infraestructura.Share")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b414772bafa7e999040c154181bd24bf0c512327")]
 [assembly: System.Reflection.AssemblyProductAttribute("RegistroLegal.Infraestructura.Share")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RegistroLegal.Infraestructura.Share")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

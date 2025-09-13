@@ -182,6 +182,9 @@ namespace RegistroLegal.Infraestructura.Identity.Migrations
                     b.Property<string>("ImagenPerfil")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime>("LastPasswordChangedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
 

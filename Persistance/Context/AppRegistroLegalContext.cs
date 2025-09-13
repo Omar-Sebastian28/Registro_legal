@@ -19,7 +19,7 @@ namespace RegistroLegal.Infraestructura.Persistance.Context
 
         public DbSet<Medio> Medios { get; set; }
 
-       public DbSet<Carpeta> Carpetas { get; set; }
+        public DbSet<Carpeta> Carpetas { get; set; }
 
         public DbSet<InfraccionCarpeta> InfraccionCarpetas { get; set; }
 
