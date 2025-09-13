@@ -1,0 +1,8 @@
+# Ignorar configuración local de Visual Studio
+.vs/
+
+# Ignorar binarios y carpetas de compilación
+bin/
+obj/
+Debug/
+Release/
