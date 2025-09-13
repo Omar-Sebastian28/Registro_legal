@@ -32,37 +32,80 @@
                 <form asp-controller="User" asp-action="Create" method="post" enctype="multipart/form-data">
 
                     <div class="form-floating mb-3">
-                        <input asp-for="Nombre" class="form-control rounded-3" placeholder="Nombre" />
+                        <input asp-for="Nombre" class="form-control rounded-3"/>
                         <label asp-for="Nombre"><i class="bi bi-person me-2"></i> Nombre</label>
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input asp-for="Apellido" class="form-control rounded-3" placeholder="Apellido" />
+                        <input asp-for="Apellido" class="form-control rounded-3"/>
                         <label asp-for="Apellido"><i class="bi bi-person-badge me-2"></i> Apellido</label>
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input asp-for="UserName" class="form-control rounded-3" placeholder="Usuario" />
+                        <input asp-for="UserName" class="form-control rounded-3"/>
                         <label asp-for="UserName"><i class="bi bi-at me-2"></i> Nombre de usuario</label>
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input asp-for="Email" type="email" class="form-control rounded-3" placeholder="correo@ejemplo.com" />
+                        <input asp-for="Email" type="email" class="form-control rounded-3"/>
                         <label asp-for="Email"><i class="bi bi-envelope me-2"></i> Correo electrónico</label>
                     </div>
 
-                    <div class="form-floating mb-3">
-                        <input asp-for="Password" type="password" class="form-control rounded-3" placeholder="Contraseña" />
-                        <label asp-for="Password"><i class="bi bi-lock me-2"></i> Contraseña</label>
+                    <!-- Contraseña -->
+                    <div class="form-floating mb-3 position-relative">
+                        <input asp-for="Password"
+                               type="password"
+                               id="passwordInput"
+                               class="form-control rounded-3"/>
+                        <label asp-for="Password">
+                            <i class="bi bi-lock me-2"></i> Contraseña
+                        </label>
+
+                        <!-- Botón mostrar/ocultar -->
+                        <button type="button"
+                                class="btn btn-link position-absolute top-50 end-0 translate-middle-y me-2 p-0"
+                                onclick="togglePassword('passwordInput', 'togglePasswordIcon')">
+                            <i class="bi bi-eye" id="togglePasswordIcon"></i>
+                        </button>
                     </div>
 
-                    <div class="form-floating mb-3">
-                        <input asp-for="ConfirmPasword" type="password" class="form-control rounded-3" placeholder="Confirmar contraseña" />
-                        <label asp-for="ConfirmPasword"><i class="bi bi-shield-check me-2"></i> Confirmar contraseña</label>
+                    <!-- Confirmar contraseña -->
+                    <div class="form-floating mb-3 position-relative">
+                        <input asp-for="ConfirmPasword"
+                               type="password"
+                               id="confirmPasswordInput"
+                               class="form-control rounded-3"/>
+                        <label asp-for="ConfirmPasword">
+                            <i class="bi bi-shield-check me-2"></i> Confirmar contraseña
+                        </label>
+
+                        <!-- Botón mostrar/ocultar -->
+                        <button type="button"
+                                class="btn btn-link position-absolute top-50 end-0 translate-middle-y me-2 p-0"
+                                onclick="togglePassword('confirmPasswordInput', 'toggleConfirmIcon')">
+                            <i class="bi bi-eye" id="toggleConfirmIcon"></i>
+                        </button>
                     </div>
 
+                    <script>
+                        function togglePassword(inputId, iconId) {
+                            const input = document.getElementById(inputId);
+                            const icon = document.getElementById(iconId);
+
+                            if (input.type === "password") {
+                                input.type = "text";
+                                icon.classList.remove("bi-eye");
+                                icon.classList.add("bi-eye-slash");
+                            } else {
+                                input.type = "password";
+                                icon.classList.remove("bi-eye-slash");
+                                icon.classList.add("bi-eye");
+                            }
+                        }
+                    </script>
+
                     <div class="form-floating mb-3">
-                        <input asp-for="Phone" class="form-control rounded-3" placeholder="Teléfono" />
+                        <input asp-for="Phone" class="form-control rounded-3"/>
                         <label asp-for="Phone"><i class="bi bi-telephone me-2"></i> Teléfono</label>
                     </div>
 
