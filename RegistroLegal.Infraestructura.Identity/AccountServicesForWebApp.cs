@@ -67,9 +67,8 @@ namespace RegistroLegal.Infraestructura.Identity
                     return response;
             }
 
-
-            var changePassword = (DateTime.UtcNow - user.LastPasswordChangedDate).Days <= 1;
-            if (changePassword) 
+            var changePassword = (DateTime.UtcNow - user.LastPasswordChangedDate).Days;
+            if (changePassword <= 30) 
             {
                 await _emailServices.SendAsync(new EmailRequestDto()
                 {
@@ -103,7 +102,7 @@ namespace RegistroLegal.Infraestructura.Identity
                                     </p>
                                     <div class='footer'>
                                         <p>Este mensaje fue generado automáticamente. No respondas a este correo.</p>
-                                        <p>&copy; {DateTime.UtcNow.Year} - Tu Aplicación</p>
+                                        <p>&copy; {DateTime.UtcNow.Year} - Soporte técnico</p>
                                     </div>
                                 </div>
                             </body>
