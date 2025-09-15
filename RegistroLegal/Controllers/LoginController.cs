@@ -12,15 +12,17 @@ namespace RegistroLegal.Controllers
     {
         private readonly IAccountServicesForWebApp _accountServicesForWebApp;
         private readonly UserManager<AppUser> _userManager;
+        private readonly IVerificacionCaptcha _verificacionCaptcha;
 
-        public LoginController(IAccountServicesForWebApp accountServicesForWebApp, UserManager<AppUser> userManager)
+        public LoginController(IAccountServicesForWebApp accountServicesForWebApp, UserManager<AppUser> userManager, IVerificacionCaptcha verificacionCaptcha)
         {
             _accountServicesForWebApp = accountServicesForWebApp;
             _userManager = userManager;
+            _verificacionCaptcha = verificacionCaptcha;
         }
 
         public async Task<IActionResult> Index()
-        {
+        {          
             AppUser? userSesion = await _userManager.GetUserAsync(User);
             if (userSesion != null)
             {
@@ -51,8 +53,22 @@ namespace RegistroLegal.Controllers
         {
             if (!ModelState.IsValid)
             {
-                // vm.Password = "";
                 return View(vm);
+            }
+
+            var token = Request.Form["g-recaptcha-response"].ToString();
+
+            if (string.IsNullOrEmpty(token))
+            {
+                ModelState.AddModelError("userValidation", "Por favor, verifica que eres humano antes de continuar.");
+                return View();
+            }
+
+            var captchIsValid = await _verificacionCaptcha.IsCaptchaValid(token);
+            if (!captchIsValid.success)
+            {
+                ModelState.AddModelError($"userValidation", $"{captchIsValid.error_codes}");
+                return View();
             }
 
             LoginReponseDto loginReponseDto = await _accountServicesForWebApp.AuthenticateAsync(new LoginDto()

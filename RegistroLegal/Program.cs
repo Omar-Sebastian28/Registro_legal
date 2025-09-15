@@ -12,20 +12,16 @@ namespace RegistroLegal
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
-
             builder.Services.AddSession(opt => 
             {
-
                 opt.IdleTimeout = TimeSpan.FromMinutes(60);
                 opt.Cookie.HttpOnly = true;
-            
             });
 
             builder.Services.AddControllersWithViews();
             builder.Services.AddPersistenceLayerIoc(builder.Configuration);
             builder.Services.AddLayerIdentityForWebApp(builder.Configuration);
-            builder.Services.AddAplicationLayerIoc();
+            builder.Services.AddAplicationLayerIoc(builder.Configuration);
             builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             builder.Services.AddShareLayerIoc(builder.Configuration);
 

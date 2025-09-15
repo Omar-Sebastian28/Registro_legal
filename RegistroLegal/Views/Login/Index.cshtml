@@ -4,20 +4,23 @@
     ViewData["Title"] = "Login";
 }
 
+@{
+    var recaptchaSiteKey = Configuration["RecaptchaSettings:SiteKey"];
+}
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 <main class="min-vh-100 d-flex justify-content-center align-items-center bg-light">
 
     <div class="row w-100" style="max-width: 1200px; min-height: 80vh;">
 
         <!-- Panel izquierdo (branding) -->
         <aside class="d-none d-lg-flex flex-column justify-content-center align-items-center col-lg-6 text-white p-5 position-relative aside-gradient overflow-hidden">
-
-            <!-- Borde ondulado derecho -->
             <svg class="position-absolute top-0 end-0 h-100" viewBox="0 0 100 100" preserveAspectRatio="none"
                  style="width: 120px; height: 100%; fill: rgba(255,255,255,0.1);">
                 <path d="M0,0 C30,50 70,50 100,100 L100,0 Z"></path>
             </svg>
 
-            <!-- Esquina roja -->
             <div style="position:absolute; bottom:0; right:0; width:150px; height:150px; background: rgba(220,53,69,0.7); clip-path: polygon(100% 0, 0 100%, 100% 100%);"></div>
 
             <div class="text-center px-4" style="max-width: 400px; z-index: 1;">
@@ -41,9 +44,9 @@
                 @Html.ValidationSummary(false, "", new { @class = "text-danger mb-3 small text-start" })
 
                 <!-- Formulario -->
-                <form asp-controller="Login" asp-action="Index" method="post" novalidate>
+                <form asp-controller="Login" asp-action="Index" method="post" novalidate id="contact_form_id">
 
-                    <!-- Usuario -->
+                  <!-- Usuario -->
                     <div class="form-floating mb-3">
                         <input asp-for="UserName"
                                class="form-control rounded-3 border-0 shadow-sm"
@@ -71,27 +74,16 @@
                         <!-- Botón para mostrar/ocultar contraseña -->
                         <button type="button"
                                 class="btn btn-link position-absolute top-50 end-0 translate-middle-y me-2 p-0"
+                                aria-label="Mostrar u ocultar contraseña"
                                 onclick="togglePassword()">
                             <i class="bi bi-eye" id="toggleIcon"></i>
                         </button>
                     </div>
 
-                    <script>
-                        function togglePassword() {
-                            const passwordInput = document.getElementById("passwordInput");
-                            const toggleIcon = document.getElementById("toggleIcon");
-
-                            if (passwordInput.type === "password") {
-                                passwordInput.type = "text";
-                                toggleIcon.classList.remove("bi-eye");
-                                toggleIcon.classList.add("bi-eye-slash");
-                            } else {
-                                passwordInput.type = "password";
-                                toggleIcon.classList.remove("bi-eye-slash");
-                                toggleIcon.classList.add("bi-eye");
-                            }
-                        }
-                    </script>
+                    <!-- reCAPTCHA -->
+                    <div class="mb-3 text-center">
+                        <div class="g-recaptcha  d-inline-block" data-sitekey="@recaptchaSiteKey"></div>
+                    </div>
 
                     <!-- Opciones -->
                     <div class="d-flex justify-content-between align-items-center mb-4">
@@ -106,11 +98,7 @@
                     </div>
 
                     <!-- Botón principal -->
-                    <button type="submit"
-                            class="btn btn-success w-100 rounded-3 py-3 fw-semibold shadow-sm"
-                            style="transition: all 0.2s ease;"
-                            aria-label="Iniciar sesión">
-                        <i class="bi bi-box-arrow-in-right me-2" aria-hidden="true"></i>
+                    <button type="submit" class="btn btn-primary w-100 rounded-3 shadow-sm">
                         Iniciar sesión
                     </button>
                 </form>
@@ -128,9 +116,23 @@
     </div>
 </main>
 
+<script>
+    function togglePassword() {
+        const passwordInput = document.getElementById("passwordInput");
+        const toggleIcon = document.getElementById("toggleIcon");
+
+        if (passwordInput.type === "password") {
+            passwordInput.type = "text";
+            toggleIcon.classList.replace("bi-eye", "bi-eye-slash");
+        } else {
+            passwordInput.type = "password";
+            toggleIcon.classList.replace("bi-eye-slash", "bi-eye");
+        }
+    }
+</script>
+
 <style>
     /* 🔥 Gradiente animado panel izquierdo */
-
     .aside-gradient {
         background: linear-gradient(135deg, #0d6efd, #198754, #dc3545);
         background-size: 300% 300%;
@@ -153,14 +155,11 @@
     }
 
     /* 🔥 Botón animado */
-    .btn-success {
-        background: linear-gradient(45deg, #28a745, #198754);
-        background-size: 200% 200%;
+    .btn-primary {
         transition: all 0.3s ease;
     }
 
-        .btn-success:hover {
-            background-position: right center;
+        .btn-primary:hover {
             transform: scale(1.05);
             box-shadow: 0 8px 20px rgba(25,135,84,0.4);
         }
