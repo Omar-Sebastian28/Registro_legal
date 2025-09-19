@@ -62,13 +62,13 @@ namespace RegistroLegal.Infraestructura.Identity
                 }
                 else 
                 {
-                    response.Error = "Las credenciales ingresadas no son váli1das. Verifica tu correo y contraseña, y vuelve a intentarlo.";
+                    response.Error = "Las credenciales ingresadas no son válidas. Verifica tus credenciales registradas.";
                 }
                     return response;
             }
 
             var changePassword = (DateTime.UtcNow - user.LastPasswordChangedDate).Days;
-            if (changePassword <= 30) 
+            if (changePassword >= 30) 
             {
                 await _emailServices.SendAsync(new EmailRequestDto()
                 {
@@ -88,7 +88,7 @@ namespace RegistroLegal.Infraestructura.Identity
                             </head>
                             <body>
                                 <div class='container'>
-                                    <h2>Hola {user.UserName},</h2>
+                                    <h2>Hola {user.UserName}</h2>
                                     <p>
                                         Te informamos que tu contraseña ha superado los 
                                         <span class='highlight'>30 días de uso</span>.
