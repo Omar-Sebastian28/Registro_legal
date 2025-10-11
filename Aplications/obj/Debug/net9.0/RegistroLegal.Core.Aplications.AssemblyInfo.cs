@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RegistroLegal.Core.Aplications")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16d227c35bfe2adaefacbe259787f184fbc253dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17ec2e87bd2f0167adbb174577e13387eeb1f48e")]
 [assembly: System.Reflection.AssemblyProductAttribute("RegistroLegal.Core.Aplications")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RegistroLegal.Core.Aplications")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

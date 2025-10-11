@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "FVHMY78+dyM=",
+  "dgSpecHash": "tRRWK79CkNk=",
   "success": true,
   "projectFilePath": "C:\\Users\\omarj\\OneDrive\\Documentos\\Escritorio\\IDE\\Proyectos C#\\RegistroLegal.Infraestructura.Share\\RegistroLegal.Infraestructura.Share.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\omarj\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\omarj\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",
     "C:\\Users\\omarj\\.nuget\\packages\\bouncycastle.cryptography\\2.5.1\\bouncycastle.cryptography.2.5.1.nupkg.sha512",
+    "C:\\Users\\omarj\\.nuget\\packages\\fluentvalidation\\12.0.0\\fluentvalidation.12.0.0.nupkg.sha512",
+    "C:\\Users\\omarj\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.0.0\\fluentvalidation.dependencyinjectionextensions.12.0.0.nupkg.sha512",
     "C:\\Users\\omarj\\.nuget\\packages\\mailkit\\4.13.0\\mailkit.4.13.0.nupkg.sha512",
     "C:\\Users\\omarj\\.nuget\\packages\\microsoft.aspnetcore.http\\2.3.0\\microsoft.aspnetcore.http.2.3.0.nupkg.sha512",
     "C:\\Users\\omarj\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
